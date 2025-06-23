@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Futuristico</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-nav">
+            <svg class="logo-svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="19" cy="19" rx="17" ry="17" stroke="#1a4d8f" stroke-width="3"/>
+                <ellipse cx="19" cy="19" rx="10" ry="14" fill="#fff" stroke="#c59d5f" stroke-width="2"/>
+                <ellipse class="logo-glow" cx="19" cy="19" rx="10" ry="14" fill="none" stroke="#c59d5f" stroke-width="2"/>
+            </svg>
+            <span class="logo-text">FuturDent</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#servizi">Servizi</a>
+            <a href="#team">Team</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero3d">
+            <div class="hero3d-content">
+                <h1 class="gradient-title">Il Futuro del Sorriso</h1>
+                <p class="hero-slogan">Tecnologia 3D e innovazione per la tua salute dentale</p>
+            </div>
+            <div class="model-3d-wrap">
+                <model-viewer src="modello.glb" alt="Protesi dentale 3D" auto-rotate camera-controls ar style="width: 340px; height: 340px; background: transparent;"></model-viewer>
+                <svg class="hero-wave" width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 40 Q 100 10 200 40 T 400 40 V60 H0Z" fill="#f2f6fa"/>
+                </svg>
+            </div>
+        </section>
+        <section id="servizi">
+            <h2>Servizi</h2>
+            <div class="servizi-list">
+                <div class="servizio-scheda">
+                    <span class="servizi-icona">🦷</span>
+                    <span class="servizio-titolo">Implantologia digitale e protesi 3D</span>
+                    <span class="servizio-desc">Soluzioni su misura con stampa 3D e chirurgia guidata.</span>
+                </div>
+                <div class="servizio-scheda">
+                    <span class="servizi-icona">🔬</span>
+                    <span class="servizio-titolo">Diagnostica avanzata e radiologia digitale</span>
+                    <span class="servizio-desc">Analisi dettagliate e diagnosi precise con tecnologie all'avanguardia.</span>
+                </div>
+                <div class="servizio-scheda">
+                    <span class="servizi-icona">💡</span>
+                    <span class="servizio-titolo">Trattamenti laser e minimamente invasivi</span>
+                    <span class="servizio-desc">Cure rapide, indolori e senza bisturi per il massimo comfort.</span>
+                </div>
+                <div class="servizio-scheda">
+                    <span class="servizi-icona">✨</span>
+                    <span class="servizio-titolo">Sbiancamento e estetica dentale</span>
+                    <span class="servizio-desc">Sorriso luminoso e naturale con tecniche innovative e sicure.</span>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <h2>Il Team</h2>
+            <div class="team-lineare">
+                <div class="team-membro">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Rossi">
+                    <div>
+                        <h3>Dr. Marco Rossi</h3>
+                        <p>Implantologo e innovatore digitale</p>
+                    </div>
+                </div>
+                <div class="team-membro">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr.ssa Bianchi">
+                    <div>
+                        <h3>Dr.ssa Laura Bianchi</h3>
+                        <p>Ortodonzista e specialista in allineamento 3D</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contatti">
+            <h2>Contatti</h2>
+            <div class="contatti-lineare">
+                <div>
+                    <p><strong>Indirizzo:</strong> Via Futuro 123, Milano</p>
+                    <p><strong>Telefono:</strong> <a href="tel:+390212345678">02 12345678</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@dentistafuturistico.it">info@dentistafuturistico.it</a></p>
+                </div>
+                <form id="contatti-form">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Messaggio" required></textarea>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FuturDent. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
