@@ -245,17 +245,110 @@ h2 {
     }
 }
 @media (max-width: 600px) {
+    body {
+        font-size: 1.08rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.7rem 0.7rem;
+    }
+    .logo-nav {
+        margin-bottom: 0.5rem;
+    }
+    .navbar nav {
+        width: 100vw;
+        overflow-x: auto;
+        gap: 1.2rem;
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+    .navbar nav a {
+        font-size: 1.05rem;
+        padding: 0.2rem 0.5rem;
+        white-space: nowrap;
+    }
+    main {
+        padding: 0 0.2rem;
+    }
+    .hero3d {
+        padding: 2rem 0 1.2rem 0;
+        min-height: 40vh;
+    }
+    .hero3d-content {
+        margin-bottom: 0.7rem;
+    }
+    .gradient-title {
+        font-size: 1.25rem;
+    }
+    .hero-slogan {
+        font-size: 1rem;
+    }
+    .model-3d-wrap {
+        margin-top: 0.5rem;
+    }
+    .model-3d-wrap model-viewer {
+        width: 170px !important;
+        height: 170px !important;
+    }
+    .model-shadow {
+        width: 60px;
+        height: 16px;
+        bottom: 8px;
+    }
+    .hero-wave {
+        width: 100vw;
+        min-width: 180px;
+    }
+    section {
+        padding: 1.2rem 0 1.2rem 0;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
     .servizi-list {
         flex-wrap: nowrap;
         overflow-x: auto;
-        gap: 1.2rem;
-        margin: 1.2rem 0 0 0;
+        gap: 1rem;
+        margin: 0.7rem 0 0 0;
+        padding-bottom: 0.5rem;
     }
     .servizio-scheda {
-        min-width: 220px;
-        max-width: 260px;
+        min-width: 80vw;
+        max-width: 90vw;
+        padding: 1.1rem 0.5rem 0.9rem 0.5rem;
         margin-bottom: 0;
         margin-top: 0;
+        border-radius: 16px;
+    }
+    .servizi-icona {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .servizio-titolo {
+        font-size: 1.05rem;
+        margin-bottom: 0.3rem;
+    }
+    .servizio-desc {
+        font-size: 0.98rem;
+    }
+    .team-lineare, .contatti-lineare {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .team-membro img {
+        width: 48px;
+        height: 48px;
+    }
+    #contatti-form, .contatti-lineare > div {
+        min-width: 0;
+        width: 100%;
+    }
+    footer {
+        padding: 1.2rem 0 0.7rem 0;
+        font-size: 0.95rem;
+        margin-top: 1rem;
     }
 }
 
