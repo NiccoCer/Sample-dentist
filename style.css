@@ -247,11 +247,15 @@ h2 {
 @media (max-width: 600px) {
     body {
         font-size: 1.08rem;
+        margin: 0;
+        padding: 0;
     }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 0.7rem 0.7rem;
+        width: 100vw;
+        box-sizing: border-box;
     }
     .logo-nav {
         margin-bottom: 0.5rem;
@@ -269,14 +273,23 @@ h2 {
         white-space: nowrap;
     }
     main {
-        padding: 0 0.2rem;
+        padding: 0;
+        margin: 0 auto;
+        width: 100vw;
+        box-sizing: border-box;
     }
-    .hero3d {
-        padding: 2rem 0 1.2rem 0;
-        min-height: 40vh;
+    .hero3d, section {
+        align-items: center !important;
+        text-align: center;
+        padding: 1.2rem 0 1.2rem 0;
+        margin: 0 auto;
+        width: 100vw;
+        box-sizing: border-box;
     }
     .hero3d-content {
         margin-bottom: 0.7rem;
+        text-align: center;
+        width: 100vw;
     }
     .gradient-title {
         font-size: 1.25rem;
@@ -286,6 +299,10 @@ h2 {
     }
     .model-3d-wrap {
         margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
     }
     .model-3d-wrap model-viewer {
         width: 170px !important;
@@ -300,12 +317,10 @@ h2 {
         width: 100vw;
         min-width: 180px;
     }
-    section {
-        padding: 1.2rem 0 1.2rem 0;
-    }
     h2 {
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        text-align: center;
     }
     .servizi-list {
         flex-wrap: nowrap;
@@ -313,6 +328,10 @@ h2 {
         gap: 1rem;
         margin: 0.7rem 0 0 0;
         padding-bottom: 0.5rem;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100vw;
+        box-sizing: border-box;
     }
     .servizio-scheda {
         min-width: 80vw;
@@ -321,6 +340,10 @@ h2 {
         margin-bottom: 0;
         margin-top: 0;
         border-radius: 16px;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .servizi-icona {
         font-size: 2rem;
@@ -336,6 +359,14 @@ h2 {
     .team-lineare, .contatti-lineare {
         flex-direction: column;
         gap: 0.7rem;
+        align-items: center;
+    }
+    .team-membro, .contatti-lineare > div, #contatti-form {
+        width: 100vw;
+        max-width: 98vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     .team-membro img {
         width: 48px;
@@ -343,12 +374,16 @@ h2 {
     }
     #contatti-form, .contatti-lineare > div {
         min-width: 0;
-        width: 100%;
+        width: 100vw;
+        max-width: 98vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     footer {
         padding: 1.2rem 0 0.7rem 0;
         font-size: 0.95rem;
         margin-top: 1rem;
+        text-align: center;
     }
 }
 
